@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.*;
 @RequestMapping("/mobile")
 public class LoginController {
 
-    @CrossOrigin(origins = "http://localhost:8080") // allow cors for this endpoint
+    //@CrossOrigin(*) // allow cors for this endpoint
     @PostMapping("/login")
     public String login(@RequestBody User user) {
         // Validate the user
